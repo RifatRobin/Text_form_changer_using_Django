@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(170, 253, 219, 0.829);
+}
+h1 {
+  position: relative;
+  top: 50px;
+  color: rgb(24, 83, 39);
+}
+p {
+  position: relative;
+  top: 75px;
+  right: 585px;
+  color: blueviolet;
+}
+hr {
+  position: relative;
+  top: 70px;
+}
+textarea {
+  position: relative;
+  top: 90px;
+}
+button {
+  background-color: rgba(221, 194, 71, 0.993);
+  position: relative;
+  top: 120px;
+  padding: 15px 25px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: inset;
+}
+button:hover {
+  background-color: orange;
+  position: relative;
+  top: 120px;
+  padding: 15px 25px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: inset;
+  box-shadow: 0 7px 12px 0 rgba(39, 39, 39, 0.24),
+    0 10px 20px 0 rgba(51, 51, 51, 0.19);
+}
+.removepunc {
+  position: relative;
+  top: 105px;
+  color: rgba(243, 35, 35, 0.705);
+}

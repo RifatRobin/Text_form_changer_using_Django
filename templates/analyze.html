@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'analyze.css' %}" />
+    <title>Analyzing the text</title>
+  </head>
+  <body>
+    <center>
+      <h1>You checked <b>{{catagory}}</b></h1>
+    </center>
+    <br />
+    <hr />
+    <br />
+    <br />
+    <center>
+      <p>
+        <pre><b class="bold">Your text with {{catagory}} is---></b> {{analyzed_text}}</pre>
+      </p>
+    </center>
+
+    <center>
+      <button>
+        <a href="home" class="btn"><b>Back</b></a>
+      </button>
+    </center>
+  </body>
+</html>

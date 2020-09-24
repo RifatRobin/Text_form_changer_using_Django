@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+    <title>Home</title>
+  </head>
+  <body>
+    <center><h1>Welcome To The text Analyser</h1></center>
+    <hr />
+    <!-- we should use post method to avoid attacks in server.. alot have to learn
+    from CSRF token -->
+    <form action="/analyze" method="post">
+      {% csrf_token %}
+      <center>
+        <p>
+          <u><b>Enter Your text here:</b></u>
+        </p>
+      </center>
+
+      <center>
+        <textarea
+          name="ytext"
+          id=""
+          cols="30"
+          rows="10"
+          style="margin: 0px; width: 1326px; height: 283px"
+        >
+        </textarea>
+      </center>
+
+      <center class="removepunc">
+        <input type="checkbox" name="removepunc" /><b>Remove punctuation</b>
+        <input type="checkbox" name="fullcaps" /><b>Uppercase</b>
+        <input type="checkbox" name="spacerem" /><b>Remove Space</b>
+        <input type="checkbox" name="cntword" /><b>Count Word</b>
+      </center>
+
+      <center>
+        <button type="submit"><b>Analyse</b></button>
+      </center>
+    </form>
+  </body>
+</html>
